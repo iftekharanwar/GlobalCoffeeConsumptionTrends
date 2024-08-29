@@ -29,12 +29,12 @@ This project aims to analyze global coffee consumption trends and investigate th
 4. Climate change may have varying impacts on different coffee-producing regions.
 
 ## Visualizations
-- Interactive global coffee consumption map: [View Map](build/animated_coffee_consumption_map.html)
-- Coffee production trend analysis: [View Trend](build/production_trend.png)
-- Production vs. Consumption scatter plot: [View Plot](build/production_vs_consumption.html)
-- Production vs. Temperature scatter plot: [View Plot](build/production_vs_temperature.html)
-- Consumption vs. Temperature scatter plot: [View Plot](build/consumption_vs_temperature.html)
-- Coffee production clusters based on climate factors: [View Clusters](build/production_clusters.html)
+- Interactive global coffee consumption map: [View Map](animated_coffee_consumption_map.html)
+- Coffee production trend analysis: [View Trend](production_trend.png)
+- Production vs. Consumption scatter plot: [View Plot](production_vs_consumption.html)
+- Production vs. Temperature scatter plot: [View Plot](production_vs_temperature.html)
+- Consumption vs. Temperature scatter plot: [View Plot](consumption_vs_temperature.html)
+- Coffee production clusters based on climate factors: [View Clusters](production_clusters.html)
 
 ## Repository Structure
 - `analyze_and_visualize.py`: Main script for data analysis and visualization
