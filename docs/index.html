@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Consumption and Climate Impact Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #4a2c2a;
+        }
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        function handleIframeError(iframe) {
+            iframe.style.display = 'none';
+            var errorMessage = document.createElement('p');
+            errorMessage.className = 'error-message';
+            errorMessage.textContent = 'The visualization could not be loaded. Please check if the file exists.';
+            iframe.parentNode.insertBefore(errorMessage, iframe.nextSibling);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Coffee Consumption and Climate Impact Analysis</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Top 15 Countries by Coffee Consumption (2020-21)</h2>
+            <img src="top_15_coffee_consumption.png" alt="Bar chart of top 15 countries by coffee consumption" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Visualization not available';">
+            <p>This bar chart shows the top 15 countries with the highest coffee consumption in 2020-21. The United States and Brazil lead in coffee consumption, followed by other major consumers like Japan and Indonesia.</p>
+        </section>
+        <section>
+            <h2>Coffee Consumption Distribution (Top 10 Countries)</h2>
+            <img src="coffee_consumption_distribution.png" alt="Pie chart of coffee consumption distribution for top 10 countries" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Visualization not available';">
+            <p>This pie chart illustrates the distribution of coffee consumption among the top 10 consuming countries. It provides a clear visual representation of each country's share in the global coffee consumption landscape.</p>
+        </section>
+        <section>
+            <h2>Distribution of Coffee Consumption Across Countries</h2>
+            <img src="coffee_consumption_distribution_boxplot.png" alt="Box plot of coffee consumption distribution across countries" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Visualization not available';">
+            <p>This box plot shows the overall distribution of coffee consumption across all countries in the dataset. It helps visualize the median consumption, as well as the range and potential outliers in the data.</p>
+        </section>
+        <section>
+            <h2>Production vs Consumption</h2>
+            <iframe src="production_vs_consumption.html" width="100%" height="600px" onload="this.style.display='block'" onerror="handleIframeError(this)"></iframe>
+            <p>This scatter plot visualizes the relationship between coffee production and consumption. Each point represents a country, with its position indicating production levels and consumption rates.</p>
+        </section>
+        <section>
+            <h2>Production vs Temperature</h2>
+            <iframe src="production_vs_temperature.html" width="100%" height="600px" onload="this.style.display='block'" onerror="handleIframeError(this)"></iframe>
+            <p>This scatter plot shows the relationship between coffee production and temperature. It helps to understand how temperature might affect coffee production in different countries.</p>
+        </section>
+        <section>
+            <h2>Consumption vs Temperature</h2>
+            <iframe src="consumption_vs_temperature.html" width="100%" height="600px" onload="this.style.display='block'" onerror="handleIframeError(this)"></iframe>
+            <p>This scatter plot illustrates the relationship between coffee consumption and temperature. It provides insights into how temperature might influence coffee consumption patterns across different countries.</p>
+        </section>
+        <section>
+            <h2>Animated Global Coffee Consumption Map</h2>
+            <iframe src="animated_coffee_consumption_map.html" width="100%" height="600px" onload="this.style.display='block'" onerror="handleIframeError(this)"></iframe>
+            <p>This interactive map shows the global distribution of coffee consumption. Countries are color-coded based on their consumption levels, providing a geographical perspective on coffee consumption patterns.</p>
+        </section>
+        <section>
+            <h2>Coffee Production Trend Analysis</h2>
+            <img src="production_trend.png" alt="Line graph of global coffee production trend" onerror="this.onerror=null; this.src='placeholder.png'; this.alt='Visualization not available';">
+            <p>This graph illustrates the trend in global coffee production over time. The trend line indicates the overall direction of production changes, helping to identify long-term patterns in the coffee industry.</p>
+        </section>
+        <section>
+            <h2>Correlation Analysis: Production and Climate Variables</h2>
+            <p>Our analysis revealed the following correlations:</p>
+            <ul>
+                <li>Correlation between Production and Temperature: 0.16 (p-value: 0.6111)</li>
+                <li>Correlation between Production and Precipitation: 0.05 (p-value: 0.8686)</li>
+            </ul>
+            <p>These results suggest weak positive correlations between coffee production and both temperature and precipitation. However, the high p-values indicate that these correlations are not statistically significant.</p>
+        </section>
+        <section>
+            <h2>Clustering Analysis: Coffee Production and Climate Factors</h2>
+            <iframe src="production_clusters.html" width="100%" height="600px" onload="this.style.display='block'" onerror="handleIframeError(this)"></iframe>
+            <p>This 3D scatter plot shows clusters of countries based on their coffee production, temperature, and precipitation. The clustering helps identify groups of countries with similar characteristics in terms of coffee production and climate conditions.</p>
+        </section>
+        <section>
+            <h2>Key Statistics</h2>
+            <ul>
+                <li>Total global coffee consumption: 110,319.00 thousand 60-lb bags</li>
+                <li>Average consumption per country: 2,828.69 thousand 60-lb bags</li>
+                <li>Median consumption: 1,253.00 thousand 60-lb bags</li>
+            </ul>
+            <p>These statistics provide an overview of the global coffee consumption landscape, highlighting the total consumption, average consumption per country, and the median consumption value.</p>
+        </section>
+        <section>
+            <h2>Actionable Recommendations</h2>
+            <h3>For Coffee Producers:</h3>
+            <ul>
+                <li>Diversify coffee varieties: Given the weak correlation between climate variables and production, explore climate-resilient coffee varieties.</li>
+                <li>Implement sustainable practices: Adopt circular economy principles and organic farming methods to improve long-term sustainability.</li>
+                <li>Monitor climate patterns: Regularly assess local climate trends to adapt cultivation practices accordingly.</li>
+            </ul>
+            <h3>For Policymakers:</h3>
+            <ul>
+                <li>Support research: Invest in studies on climate-resistant coffee varieties and sustainable farming practices.</li>
+                <li>Develop incentives: Create programs to encourage adoption of sustainable and climate-smart coffee production methods.</li>
+                <li>Promote international cooperation: Facilitate knowledge sharing between coffee-producing countries to address common challenges.</li>
+            </ul>
+            <h3>For Consumers:</h3>
+            <ul>
+                <li>Choose sustainable brands: Support coffee producers and brands that prioritize environmentally friendly practices.</li>
+                <li>Reduce waste: Opt for reusable coffee filters and cups to minimize environmental impact.</li>
+                <li>Stay informed: Learn about the origins of your coffee and the challenges faced by producing regions.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Data analysis and visualizations created using Python, Pandas, Matplotlib, Seaborn, and Plotly.</p>
+    </footer>
+</body>
+</html>
