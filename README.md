@@ -3,6 +3,8 @@
 ## Project Overview
 This project aims to analyze global coffee consumption trends and investigate the potential impact of climate change on coffee production. By combining data on coffee consumption, production, and climate variables, we seek to uncover insights into the relationships between these factors and their implications for the global coffee industry.
 
+## Check it out here: [Project Link](https://eclectic-sopapillas-31b718.netlify.app)
+
 ## Data Sources
 - Global Coffee Consumption Data: Annual consumption data for various countries
 - Coffee Production Data: Historical production data from major coffee-producing regions
