@@ -55,8 +55,6 @@ This project aims to analyze global coffee consumption trends and investigate th
 - Analyze the impact of coffee production methods on quality and yield
 - Investigate the economic implications of changing coffee production patterns
 
-## Contributors
-- [iftekharanwar]
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
